@@ -121,8 +121,6 @@ jobs:
           cd build
           python3 ../configure.py --enable-optimize --metamod=${{ env.DEPENDENCIES_ROOT }}/metamod-am --hlsdk=${{ env.DEPENDENCIES_ROOT }}/hlsdk --mysql=${{ env.DEPENDENCIES_ROOT }}/mysql-5.5
           ambuild
-          cd .. ; zip -q -r amxmodx___.zip ./amxmodx
-          cp amxmodx___.zip ./amxmodx 
  
       - uses: ilammy/msvc-dev-cmd@v1
         with:
@@ -142,4 +140,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: amxmodx
-          path: amxmodx/amxmodx___.zip         
+          path: amxmodx/        
