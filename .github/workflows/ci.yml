@@ -141,4 +141,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: amxmodx
-          path: amxmodx___.tar.gz         
+          path: amxmodx___.zip         
