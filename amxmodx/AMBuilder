@@ -4,7 +4,6 @@ import os.path
 binary = AMXX.MetaPlugin(builder, 'amxmodx')
 
 binary.compiler.defines += [
-  'JIT',
   'ASM32',
   'HAVE_STDINT_H',
 ]
