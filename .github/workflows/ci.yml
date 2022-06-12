@@ -139,5 +139,5 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: amxmodx
-          path: amxmodx/        
+          name: amxmodx ${{ matrix.include.os }}
+          path: ${{ github.workspace }}        
