@@ -155,12 +155,12 @@ class AMXXConfig(object):
       self.configure_msvc(cxx)
 
     # Optimization
-    if builder.options.opt == '1':
-      cxx.defines += ['NDEBUG']
+    #if builder.options.opt == '1':
+    #  cxx.defines += ['NDEBUG']
 
     # Debugging
-    if builder.options.debug == '1':
-      cxx.defines += ['DEBUG', '_DEBUG']
+    # if builder.options.debug == '1':
+    cxx.defines += ['DEBUG', '_DEBUG']
 
     # Platform-specifics
     if builder.target_platform == 'linux':
